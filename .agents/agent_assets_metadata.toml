@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "hhn9G9vuQBdfT9L-dDYAs"
+uri = "file://README.md"
+type = "text"
+title = "Checkers Draft — README.md"
