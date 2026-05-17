@@ -30,6 +30,29 @@ Checkers Draft adds a **pre-match drafting phase** before every game. Each playe
 
 ---
 
+## Checkers Rules (Which Variant?)
+
+Capture rules are **not universal** across checkers traditions. Before you play or judge a move, know which variant you are on.
+
+| Tradition | Mandatory capture? | If multiple captures are possible |
+|---|---|---|
+| **American / English Draughts** (this game) | Yes | **Any legal capture** — you are not required to take the longest chain |
+| **International Draughts** | Yes | Must take the **maximum** number of pieces |
+| **Italian / Spanish / Brazilian** | Yes | Variant-specific (e.g. Italian may prioritize captures that take the most kings) |
+| **Historical “huffing” (optional capture)** | No — failing to capture could let the opponent remove your piece | Largely obsolete in tournament play since the early 1900s; some casual house rules still use it |
+
+**Checkers Draft follows American Checkers rules:**
+
+1. **Mandatory capture** — if you can jump an opponent’s piece, you must. Non-capture moves are not allowed while a capture exists.
+2. **Any capture sequence** — when several different captures are available, you may choose **any** of them. The game does **not** enforce “longest sequence wins” (that is International-style).
+3. **Multi-jump chains** — if the same piece can capture again from its landing square, you must continue with that piece until no further captures are available (unless promoted to a king mid-chain, per standard American rules).
+
+This matches what most casual players expect and keeps move generation simpler than International rules. If we ever add a rules toggle, the two sensible defaults would be **American** (current) vs **International** (mandatory capture + longest sequence required).
+
+For in-app copy, see the **Basic Checkers Rules** section on the `/rules` page.
+
+---
+
 ## How the Draft System Works
 
 Before every match, each player goes through a drafting phase:
