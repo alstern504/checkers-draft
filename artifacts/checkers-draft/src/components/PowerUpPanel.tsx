@@ -55,8 +55,10 @@ export function PowerUpPanel({
         </CardTitle>
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
           <div
-            className={`w-3 h-3 rounded-full ${
-              player === 1 ? "bg-red-600" : "bg-zinc-700"
+            className={`w-3 h-3 rounded-full border ${
+              player === 1
+                ? "bg-rose-300 border-rose-400/90"
+                : "bg-sky-400 border-sky-500/90"
             }`}
           />
           {piecesLeft} pieces
