@@ -57,7 +57,7 @@ export default function Draft() {
       : { label: "Hard", color: "bg-red-500/20 text-red-400 border-red-500/40" };
 
   return (
-    <div className="container max-w-4xl py-12 flex flex-col items-center">
+    <div className="container max-w-4xl mx-auto py-12 flex flex-col items-center">
       <div className="w-full text-center space-y-4 mb-10 animate-in fade-in slide-in-from-top-4">
         <div className="flex items-center justify-center gap-3">
           <h1 className="text-4xl font-bold tracking-tight">

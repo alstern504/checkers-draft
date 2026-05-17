@@ -17,7 +17,7 @@ export default function Home() {
   };
 
   return (
-    <div className="container max-w-4xl py-12 space-y-12">
+    <div className="container max-w-4xl mx-auto py-12 space-y-12">
       <div className="text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-primary">
           CHECKERS DRAFT

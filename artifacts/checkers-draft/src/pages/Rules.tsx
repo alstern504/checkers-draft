@@ -3,7 +3,7 @@ import { POWER_UPS } from "@/lib/types";
 
 export default function Rules() {
   return (
-    <div className="container max-w-3xl py-12 space-y-12">
+    <div className="container max-w-3xl mx-auto py-12 space-y-12">
       <div className="space-y-4">
         <h1 className="text-4xl font-bold tracking-tight">How to Play</h1>
         <p className="text-xl text-muted-foreground">

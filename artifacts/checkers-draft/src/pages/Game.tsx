@@ -32,7 +32,7 @@ export default function Game() {
       : "Player 2";
 
   return (
-    <div className="container py-8 flex flex-col items-center max-w-6xl gap-8 animate-in fade-in duration-700">
+    <div className="container py-8 flex flex-col items-center max-w-6xl mx-auto gap-8 animate-in fade-in duration-700">
 
       <div className="w-full flex justify-between items-center">
         <div className="flex items-center gap-3">
@@ -62,10 +62,10 @@ export default function Game() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col lg:flex-row gap-8 items-start justify-center">
+      <div className="w-full flex flex-col lg:grid lg:grid-cols-[1fr_auto_1fr] gap-8 items-start lg:items-start">
 
         {/* Player 1 Panel */}
-        <div className="w-full lg:w-auto flex-1 flex justify-end">
+        <div className="w-full flex justify-center lg:justify-end">
           <PowerUpPanel
             player={1}
             gameState={gameState}
@@ -74,7 +74,7 @@ export default function Game() {
         </div>
 
         {/* Board */}
-        <div className="w-full lg:w-auto flex-none">
+        <div className="w-full flex flex-col items-center">
           <div className="mb-4 text-center space-y-1">
             <span className="text-sm uppercase tracking-widest text-muted-foreground font-semibold">
               Turn {gameState.turnCount}
@@ -120,7 +120,7 @@ export default function Game() {
         </div>
 
         {/* Player 2 / AI Panel */}
-        <div className="w-full lg:w-auto flex-1 flex justify-start">
+        <div className="w-full flex justify-center lg:justify-start">
           <PowerUpPanel
             player={2}
             gameState={gameState}

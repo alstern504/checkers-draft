@@ -17,7 +17,7 @@ function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col font-sans">
       <header className="border-b border-border/50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container mx-auto flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 font-bold tracking-tight text-xl text-primary hover:opacity-80 transition-opacity">
             Checkers Draft
           </Link>

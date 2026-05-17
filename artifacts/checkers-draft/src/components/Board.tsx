@@ -59,8 +59,8 @@ export function Board({ gameState, onSelectPiece, onSelectSquare }: BoardProps) 
   }
 
   return (
-    <div className="w-full max-w-2xl mx-auto">
-      <div className="grid grid-cols-8 grid-rows-8 border-4 border-amber-900/60 rounded-sm shadow-2xl bg-black overflow-hidden relative">
+    <div className="w-full max-w-2xl mx-auto lg:max-w-none lg:w-[min(36rem,calc(100vh-14rem))] lg:shrink-0">
+      <div className="grid grid-cols-8 grid-rows-8 aspect-square w-full border-4 border-amber-900/60 rounded-sm shadow-2xl bg-black overflow-hidden relative">
         {squares}
         
         {/* Active power-up targeting overlay */}
