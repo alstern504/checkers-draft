@@ -36,7 +36,7 @@ export type GameState = {
   board: (Piece | null)[][];
   currentTurn: 1 | 2;
   selectedPiece: { row: number; col: number } | null;
-  legalMoves: { row: number; col: number; isCapture: boolean; captureSquare?: { row: number; col: number } }[];
+  legalMoves: { pieceRow: number; pieceCol: number; destRow: number; destCol: number; isCapture: boolean; captureSquare?: { row: number; col: number } }[];
   winner: 1 | 2 | null;
   p1PowerUps: Record<PowerUpId, { remaining: number }>;
   p2PowerUps: Record<PowerUpId, { remaining: number }>;
